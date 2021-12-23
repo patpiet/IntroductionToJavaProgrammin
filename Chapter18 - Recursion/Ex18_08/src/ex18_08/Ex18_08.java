@@ -23,12 +23,13 @@ public class Ex18_08 {
         // ask for integer
         System.out.println("Enter integer: ");
         int value = input.nextInt();
-        
+
         reverseDisplay(value);
     }
+
     // returns reverse display of integer
-    public static void reverseDisplay(int value){
-        if(value / 10 == 0){    // base case
+    public static void reverseDisplay(int value) {
+        if (value / 10 == 0) {    // base case
             System.out.print(value);
             return;
         }

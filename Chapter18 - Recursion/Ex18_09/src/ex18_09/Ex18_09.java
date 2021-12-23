@@ -23,13 +23,13 @@ public class Ex18_09 {
         // Ask for string
         System.out.println("Enter string: ");
         String value = input.next();
-        
+
         reverseDisplay(value);
     }
-    
+
     // displays reversed string
-    public static void reverseDisplay(String value){
-        if(value.length() != 0){
+    public static void reverseDisplay(String value) {
+        if (value.length() != 0) {
             // print last character of the string
             System.out.print(value.charAt(value.length() - 1));
             // pass value string without last character

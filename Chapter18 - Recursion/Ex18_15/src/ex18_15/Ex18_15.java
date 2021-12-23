@@ -1,19 +1,17 @@
 /*
-    (Occurrences of a specified character in a string) Write a recursive method that
-    finds the number of occurrences of a specified letter in a string using the following
-    method header:
-    public static int count(String str, char a)
-    For example, count("Welcome", 'e') returns 2. Write a test program that
-    prompts the user to enter a string and a character, and displays the number of
-    occurrences for the character in the string.
+    (Occurrences of a specified character in a string) Rewrite Programming Exercise
+    18.10 using a helper method to pass the substring high index to the method.
+    The helper method header is:
+
+    public static int count(String str, char a, int high)
  */
-package ex18_10;
+package ex18_15;
 
 /**
  *
  * @author patpiet
  */
-public class Ex18_10 {
+public class Ex18_15 {
 
     public static void main(String[] args) {
         System.out.println(count("Welcome", 'e'));
@@ -29,4 +27,5 @@ public class Ex18_10 {
             return 0 + count(str.substring(1, str.length()), a);  // recursive call
         }
     }
+    
 }

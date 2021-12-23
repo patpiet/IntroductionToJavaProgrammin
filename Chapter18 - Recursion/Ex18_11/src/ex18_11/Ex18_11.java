@@ -4,7 +4,7 @@
     public static int sumDigits(long n)
     For example, sumDigits(234) returns 2 + 3 + 4 = 9. Write a test program
     that prompts the user to enter an integer and displays its sum.
-*/
+ */
 package ex18_11;
 
 /**
@@ -14,14 +14,14 @@ package ex18_11;
 public class Ex18_11 {
 
     public static void main(String[] args) {
-            System.out.println(sumDigits(2345));
-        }
-    
-    public static int sumDigits(long n){
-        if(n / 10 == 0){    // base cse
+        System.out.println(sumDigits(2345));
+    }
+
+    public static int sumDigits(long n) {
+        if (n / 10 == 0) {    // base czse
             return (int) n;
-        }else{
+        } else {
             return (int) (n % 10 + sumDigits(n / 10));  // recursive call
         }
     }
-}
+}  
