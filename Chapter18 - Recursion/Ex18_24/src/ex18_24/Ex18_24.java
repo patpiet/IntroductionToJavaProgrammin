@@ -26,7 +26,7 @@ public class Ex18_24 {
     private static int hex2Dec(String hexString, int high, int coefficient) {
         if(high == -1){     // base case
             return 0;
-        }else{  // recursive call
+        }else{              // recursive call
             return getHex(hexString.charAt(high)) * coefficient + hex2Dec(hexString, high - 1, coefficient * 16);
         }
     }
