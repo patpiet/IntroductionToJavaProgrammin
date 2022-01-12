@@ -62,6 +62,5 @@ public abstract class GeometricObject implements Comparable<GeometricObject>, Co
     public static GeometricObject max(GeometricObject obj, GeometricObject obj2) {
         
         return (obj.getArea() >= obj2.getArea()) ? obj : obj2;
-        
     }
 }
